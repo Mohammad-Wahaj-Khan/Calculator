@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parentDiv{
+    width: 16.5%;
+    margin: 100px auto;
+    border: 10px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    height: 270px;
+}
+.inputDiv input{
+    width: 100%;
+    height: 50px;
+    border-color: black;
+    background-color: grey;
+    outline: none;
+}
+
+.inputDiv input::placeholder{
+    color: white;
+}
+.bodyDiv table{
+    border-spacing: 5px;
+}
+.bodyDiv table{
+    height: 200px;
+    width: 100%;
+    border: none;
+}
+.bodyDiv table tr{
+    background-color: lightgrey;
+    border: none;
+    width: 100px;
+}
+.red{
+    background-color: red;
+    z-index: 2;
+}
+.yellow{
+    background-color: yellow;
+    z-index: 2;
+}
+@media screen and (width: 320px){
+    .parentDiv{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (width: 395px){
+    .parentDiv{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width: 435px){
+    .parentDiv{
+        width: 50%;
+    }
+    
+}
+@media screen and (width: 768px){
+    .parentDiv{
+        width: 30%;
+    }
+    
+}
+@media screen and (width: 1030px){
+    .parentDiv{
+        width: 20%;
+    }
+    
+}
+@media screen and (width: 2570px){
+    .parentDiv{
+        width: 10%;
+    }
+    
+}

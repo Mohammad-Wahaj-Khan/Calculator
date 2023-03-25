@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="parentDiv">
+        <div class="inputDiv">
+            <input type="text" placeholder="Calculate Here..." id="number">
+        </div>
+        <div class="bodyDiv">
+            <table border="2">
+                <tr>
+                    <td onclick="setNumber(7)"><b><center>7</center></b></td>
+                    <td onclick="setNumber(8)"><b><center>8</center></b></td>
+                    <td onclick="setNumber(9)"><b><center>9</center></b></td>
+                    <td class="yellow" onclick="setNumber('/')"><b><center>/</center></b></td>
+                </tr>
+                <tr>
+                    <td onclick="setNumber(4)"><b><center>4</center></b></td>
+                    <td onclick="setNumber(5)"><b><center>5</center></b></td>
+                    <td onclick="setNumber(6)"><b><center>6</center></b></td>
+                    <td class="yellow" onclick="setNumber('*')"><b><center>*</center></b></td>
+                </tr>
+                <tr>
+                    <td onclick="setNumber(1)"><b><center>1</center></b></td>
+                    <td onclick="setNumber(2)"><b><center>2</center></b></td>
+                    <td onclick="setNumber(3)"><b><center>3</center></b></td>
+                    <td class="yellow" onclick="setNumber('-')"><b><center>-</center></b></td>
+                </tr>
+                <tr>
+                    <td onclick="setNumber('.')"><b><center>.</center></b></td>
+                    <td onclick="setNumber('%')"><b><center>%</center></b></td>
+                    <td onclick="setNumber(0)"><b><center>0</center></b></td>
+                    <td class="yellow" onclick="setNumber('+')"><b><center>+</center></b></td>
+                </tr>
+                <tr>
+                    <td class="red" colspan="3" onclick="ans()"><b><center>=</center></b></td>
+                    <td class="red" id="deleteButton" onclick="(C)"><b><center>C</center></b></td>
+                </tr>
+
+                
+            </table>
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
